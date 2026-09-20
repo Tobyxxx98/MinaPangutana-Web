@@ -5,7 +5,7 @@ App Store build. Test locally with a web server; service-worker features do not
 work correctly when index.html is opened directly from the filesystem.
 
 Features include Practice Exam, scoring, answer review, Flip Card Study,
-IndexedDB question storage, JSON and MinaPangutana-safe TXT file import,
+IndexedDB question storage, text-based PDF, JSON and MinaPangutana-safe TXT import,
 duplicate filtering, export backup, offline caching, iPhone safe-area support,
 installation guidance, authorship, and the independent-reviewer disclaimer.
 
