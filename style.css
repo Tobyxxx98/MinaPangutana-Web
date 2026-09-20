@@ -1,0 +1,19 @@
+:root{color-scheme:dark;--bg:#101214;--panel:#1b1f22;--panel2:#292f33;--gold:#ffb300;--text:#fff;--muted:#b8c0c5;--line:#4f5a61;--good:#75d47e;--bad:#ff8078}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:var(--bg)}
+body{margin:0;min-height:100dvh;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif;overscroll-behavior:none}
+header{position:sticky;z-index:10;top:0;display:flex;justify-content:space-between;align-items:center;padding:calc(10px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) 10px max(16px,env(safe-area-inset-left));background:#1b1f22f5;border-bottom:1px solid var(--line);backdrop-filter:blur(18px)}
+header b,h1{color:var(--gold)}
+main{max-width:760px;margin:auto;padding:18px max(14px,env(safe-area-inset-right)) calc(92px + env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left))}
+.card,.hero{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px;margin:12px 0;box-shadow:0 8px 30px #0003}
+.hero{text-align:center;border-color:var(--gold)}
+button{min-height:48px;background:var(--gold);color:#111;border:0;border-radius:12px;padding:13px 15px;font:inherit;font-weight:800;margin:5px;cursor:pointer;touch-action:manipulation}
+button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.compact{min-height:40px;padding:8px 14px}.secondary,.option{background:var(--panel2);color:var(--text);border:1px solid #65727a}
+.option{display:block;width:100%;text-align:left;margin:9px 0;min-height:56px}.selected{border:2px solid var(--gold);background:#3b3526}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.muted{color:var(--muted)}.good{color:var(--good)}.bad{color:var(--bad)}
+label{display:block;font-weight:700;margin-top:8px}input,textarea{width:100%;font-size:16px;padding:12px;margin:8px 0 14px;background:#15181a;color:var(--text);border:1px solid #65727a;border-radius:10px}
+textarea{min-height:210px;resize:vertical}.notice{border-left:4px solid var(--gold);padding:10px 14px;background:#2a2518;border-radius:8px;margin:12px 0}
+footer{position:fixed;z-index:9;bottom:0;width:100%;text-align:center;background:#1b1f22f2;color:#aeb5b9;padding:9px 8px calc(9px + env(safe-area-inset-bottom));font-size:11px;backdrop-filter:blur(18px)}
+@media(max-width:520px){.grid{grid-template-columns:1fr}h1{font-size:28px}.card,.hero{border-radius:16px}}
+@media(display-mode:standalone){.install-help{display:none}}

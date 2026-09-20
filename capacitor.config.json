@@ -1,0 +1,6 @@
+{
+  "appId": "com.orelogic.minapangutana",
+  "appName": "MinaPangutana",
+  "webDir": ".",
+  "server": {"iosScheme":"https"}
+}
